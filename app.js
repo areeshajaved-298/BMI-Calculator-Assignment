@@ -21,13 +21,13 @@ function abc() {
     // Determine BMI category
     let category = "";
     if (bmi < 18.5) {
-        category = "Underweight";
+        category = "🥀 Underweight";
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        category = "Normal weight";
+        category = "💪 Normal weight";
     } else if (bmi >= 25 && bmi < 29.9) {
-        category = "Overweight";
+        category = "🍔 Overweight";
     } else {
-        category = "Obese";
+        category = "🏋️‍♂️ / 🏋️‍♀️ Obese";
     }
 
     // Display result
