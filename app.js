@@ -2,17 +2,17 @@ function abc() {
     console.log ("Test")
     let weight = document.getElementById('weight').value;
     let height = document.getElementById('height').value;
-    let para   = document.getElementById('para');
+    let result = document.getElementById('result');
 
     if (weight === "" || height === "") {
-        para.style.display = "block";
-        para.innerText = "❌ Please enter both weight and height.";
+        result.style.display = "block";
+        result.innerText = "❌ Please enter both weight and height.";
         return;
     }
 
        // Convert to numbers (optional safety step)
     weight = parseFloat(weight);
-    height = parseFloat(height);
+    height = parseFloat(height) / 100; 
 
     // Calculate BMI
     let bmi = weight / (height * height);
@@ -31,6 +31,6 @@ function abc() {
     }
 
     // Display result
-    para.style.display = "block";
-    para.innerText = `✅ Your BMI is ${bmiRounded} (${category})`;
+    result.style.display = "block";
+    result.innerText = `✅ Your BMI is ${bmiRounded} (${category})`;
 }

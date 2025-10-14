@@ -4,23 +4,28 @@
     box-sizing: border-box;
 }
 body{
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    background-image: url(https://www.saga.co.uk/helix-contentlibrary/exceptional/2023/06/is-bmi-accurate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 h1{
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 25px;
     text-align: center;
+    color: #A0522D;
 }
 #container{
   border: 2px solid white;
   width: 500px;
   height: 400px;
-  background-color: #fff;
+  background-color: #fffacd;
   border-radius: 10px;
   box-shadow: 0 2px 5px black;
 }
@@ -28,13 +33,17 @@ label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-left: 20px;
+    color: #A0522D;
+    font-weight: bold;
 }
 input{
     width: 450px;
     height: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+    color: #A0522D;
     margin-left: 20px;
+    font-weight: bold;
 }
 button{
     margin-top: 30px;
@@ -43,17 +52,18 @@ button{
     margin-left: 25px;
     border-radius: 8px;
     border: none;
-    background: #764ba2;
+    font-family: 'Times New Roman', Times, serif;
+    background: #A0522D;
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
 button:hover{
-   background-color: #af63fc;
+   background-color: #CD853F;
 }
 
-#para{
+#result{
     display: none;
     margin-top: 20px;
     text-align: center;
